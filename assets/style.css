@@ -643,6 +643,16 @@ section {
     color: var(--color-text-secondary);
 }
 
+.footer-container a {
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: var(--color-accent)
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 2rem;
