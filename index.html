@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabian Ternis - Laravel Developer</title>
-    <meta
-      name="description"
-      content="Fabian Ternis is a Laravel Developer from Germany specializing in elegant web solutions and robust backend development."
-    />
-    <meta
-      name="keywords"
-      content="Fabian Ternis, Laravel developer, PHP developer, Web Dev, Webentwickler, Germany, Web Development, Backend Development, Frontend Development, Fullstack, michaelninder, XPsystems, MTEX.dev, dsc.pics, switchJS"
-    />
-    <meta name="author" content="Fabian Ternis" />
-    <meta property="og:title" content="Fabian Ternis - Laravel Developer" />
-    <meta
-      property="og:description"
-      content="Fabian Ternis is a Laravel Developer from Germany specializing in elegant web solutions and robust backend development."
-    />
-    <meta property="og:url" content="https://www.fabianternis.dev" />
-    <meta property="og:type" content="website" />
+    <meta name="description" content="Fabian Ternis is a Laravel Developer from Germany specializing in elegant web solutions and robust backend development.">
+    <meta name="keywords" content="Fabian Ternis, Laravel developer, PHP developer, Web Dev, Webentwickler, Germany, Web Development, Backend Development, Frontend Development, Fullstack, michaelninder, XPsystems, MTEX.dev, dsc.pics, switchJS">
+    <meta name="author" content="Fabian Ternis">
+    <meta property="og:title" content="Fabian Ternis - Laravel Developer">
+    <meta property="og:description" content="Fabian Ternis is a Laravel Developer from Germany specializing in elegant web solutions and robust backend development.">
+    <meta property="og:url" content="https://www.fabianternis.dev">
+    <meta property="og:type" content="website">
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
     <style>
       :root {
         --color-dark: #0f0f0f;
-        --color-light: #ffffff;
+        --color-light: #fafafa;
         --color-bg: var(--color-light);
         --color-text: var(--color-dark);
         --color-text-secondary: #6b7280;
@@ -43,8 +30,8 @@
       }
 
       :root.dark {
-        --color-bg: #0f0f0f;
-        --color-text: #fafafa;
+        --color-bg: var(--color-dark);
+        --color-text: var(--color-light);
         --color-text-secondary: #9ca3af;
         --color-border: #262626;
         --color-accent: #60a5fa;
@@ -674,6 +661,7 @@
         transition: opacity 0.3s ease;
       }
       
+      /*
       #toast-container {
         position: fixed;
         top: 2rem;
@@ -700,6 +688,7 @@
         opacity: 1;
         transform: translateY(0);
       }
+      */
 
       @media (max-width: 768px) {
         .nav-links {
@@ -744,6 +733,8 @@
         }
       }
     </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body>
     <div class="nav-overlay" id="nav-overlay"></div>
@@ -1100,7 +1091,7 @@
         applyTheme(newTheme);
         localStorage.setItem(themeKey, newTheme);
 
-        showToast(newTheme === "dark" ? "Dark mode enabled" : "Light mode enabled");
+        //showToast(newTheme === "dark" ? "Dark mode enabled" : "Light mode enabled");
       });
 
       const openMobileNav = () => {
