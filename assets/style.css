@@ -328,20 +328,26 @@ section {
 }
 
 .social-links a .icon {
-  width: 1.375rem; /* Larger icon size */
-  height: 1.375rem; /* Larger icon size */
+  width: 1.456rem;
+  height: 1.456rem;
+  transition-duration: .25s;
 }
 
-/* Specific fill/stroke for social icons */
+.social-links a:hover .icon {
+  width: 2rem;
+  height: 2rem;
+  rotate: -5deg;
+}
+
 .social-links a[aria-label="GitHub"] .icon path {
-  fill: currentColor; /* GitHub icon is fill-based */
+  fill: currentColor;
   stroke: none;
 }
 
 .social-links a[aria-label="Email"] .icon path {
-  fill: none; /* Email icon is stroke-based */
+  fill: none;
   stroke: currentColor;
-  stroke-width: 2; /* Adjust stroke-width for visibility if needed */
+  stroke-width: 2;
 }
 
 .section-title {
@@ -673,6 +679,12 @@ section {
   height: 1.125rem;
   stroke: var(--color-bg);
   fill: none;
+  transition-duration: .2s;
+}
+
+.scroll-to-top:hover .icon {
+  width: 1.45rem;
+  height: 1.45rem;
 }
 
 .list-item {
