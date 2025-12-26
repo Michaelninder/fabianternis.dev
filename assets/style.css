@@ -641,16 +641,27 @@ section {
     margin-top: 3rem;
     font-size: 0.875rem;
     color: var(--color-text-secondary);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-container a {
+    text-decoration: underline;
+    color: var(--color-text-secondary)
+}
+
+.footer-container a:hover {
     text-decoration: none;
     color: var(--color-text)
 }
 
-.footer-container a:hover {
-    text-decoration: underline;
-    color: var(--color-accent)
+.footer-container .links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
 }
 
 .scroll-to-top {
