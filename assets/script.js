@@ -39,8 +39,6 @@ themeToggle.addEventListener("click", () => {
     const newTheme = isDark ? "light" : "dark";
     applyTheme(newTheme);
     localStorage.setItem(themeKey, newTheme);
-
-    //showToast(newTheme === "dark" ? "Dark mode enabled" : "Light mode enabled");
 });
 
 const openMobileNav = () => {
@@ -109,6 +107,7 @@ setTimeout(updateStatus, 3000);
 
 async function fetchGitHubActivity() {
     const container = document.getElementById("activity-container");
+    if (!container) return;
     const username = "michaelninder";
     const tooltip = document.getElementById("tooltip");
 
